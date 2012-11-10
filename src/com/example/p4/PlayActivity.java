@@ -6,14 +6,14 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 
-public class Highscores extends Activity {
+public class PlayActivity extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_highscores);
+        setContentView(R.layout.activity_playscreen);
         
-        Button mainMenuButton = (Button) findViewById(R.id.main_menu_button);
+        Button mainMenuButton = (Button) findViewById(R.id.playscreen_main_menu_button);
         mainMenuButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 goToMainMenu();

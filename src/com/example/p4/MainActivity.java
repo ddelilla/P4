@@ -18,6 +18,13 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         Button playButton = (Button) findViewById(R.id.play_button);
         Button highScoreButton = (Button) findViewById(R.id.high_score_button);
+        
+        playButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                launchPlayScreen();
+            }
+        });
+        
         highScoreButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 launchHighscores();
@@ -31,10 +38,17 @@ public class MainActivity extends Activity {
         return true;
     }
     
+    protected void launchPlayScreen() {
+        Intent i = new Intent(this, PlayActivity.class);
+        startActivity(i);
+    }
+    
     protected void launchHighscores() {
         Intent i = new Intent(this, Highscores.class);
         startActivity(i);
     }
+    
+    
     
 }
 
