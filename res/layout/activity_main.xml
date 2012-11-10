@@ -36,5 +36,4 @@
         android:layout_marginTop="23dp"
         android:text="High Scores" />
 
-
 </RelativeLayout>
