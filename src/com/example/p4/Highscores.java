@@ -5,7 +5,7 @@ import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
-
+//daniel comment
 public class Highscores extends Activity {
 
     @Override
